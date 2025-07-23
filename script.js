@@ -75,7 +75,7 @@ function updateExperienceSection(lang) {
 
 // Initialize language system
 async function initLanguageSystem() {
-    // Load both language files
+    // Load all translations
     translations.en = await loadTranslations('en');
     translations.de = await loadTranslations('de');
     
@@ -87,6 +87,10 @@ async function initLanguageSystem() {
     
     // Update active language button
     updateLanguageButtons();
+    
+    // Remove loading class and show content
+    document.body.classList.remove('content-loading');
+    document.body.classList.add('content-loaded');
     
     // Add event listeners to language buttons
     const langButtons = document.querySelectorAll('.lang-btn');

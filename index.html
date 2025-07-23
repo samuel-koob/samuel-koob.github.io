@@ -9,8 +9,31 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Prevent layout shift during translation loading */
+        .content-loading {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .content-loaded {
+            opacity: 1;
+        }
+        /* Ensure minimum heights to prevent jumping */
+        [data-translate] {
+            min-height: 1.2em;
+        }
+        .hero-title {
+            min-height: 2.5em;
+        }
+        .hero-subtitle {
+            min-height: 1.8em;
+        }
+        .hero-description {
+            min-height: 3em;
+        }
+    </style>
 </head>
-<body>
+<body class="content-loading">
     <!-- No JavaScript Warning -->
     <noscript>
         <div id="noscript-warning" style="
@@ -175,9 +198,10 @@
                         <h3 data-translate="projects.items.1.name">Loading...</h3>
                         <p data-translate="projects.items.1.description">Loading....</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Keras</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/sam-k0/cloud-forecasting-cnn" class="project-link">
@@ -194,9 +218,10 @@
                         <h3 data-translate="projects.items.2.name">Loading...</h3>
                         <p data-translate="projects.items.2.description">Loading...</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">ESP-IDF</span>
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">LVGL</span>
+                            <span class="tech-tag">FreeRTOS</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/sam-k0/ESP32C3-MPD-GUI" class="project-link">
