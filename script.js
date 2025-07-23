@@ -1,5 +1,124 @@
+// Translation system
+let currentLanguage = 'en';
+let translations = {};
+
+// Load translations
+async function loadTranslations(lang) {
+    try {
+        const response = await fetch(`languages/${lang}.json`);
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading translations:', error);
+        return {};
+    }
+}
+
+// Get nested object value by string path
+function getNestedValue(obj, path) {
+    return path.split('.').reduce((current, key) => current && current[key], obj);
+}
+
+// Update text content based on translations
+function updateContent(lang) {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        const translation = getNestedValue(translations[lang], key);
+        if (translation) {
+            element.textContent = translation;
+        }
+    });
+
+    // Update placeholders
+    const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        const translation = getNestedValue(translations[lang], key);
+        if (translation) {
+            element.placeholder = translation;
+        }
+    });
+
+    // Update experience section
+    updateExperienceSection(lang);
+}
+
+// Dynamically build experience section
+function updateExperienceSection(lang) {
+    const timeline = document.getElementById('experience-timeline');
+    const experienceData = translations[lang]?.experience?.jobs || [];
+    
+    timeline.innerHTML = '';
+    
+    experienceData.forEach(job => {
+        const timelineItem = document.createElement('div');
+        timelineItem.className = 'timeline-item';
+        
+        const achievements = job.achievements.map(achievement => 
+            `<li>${achievement}</li>`
+        ).join('');
+        
+        timelineItem.innerHTML = `
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3>${job.position}</h3>
+                <h4>${job.company}</h4>
+                <span class="timeline-date">${job.period}</span>
+                <p>${job.description}</p>
+                <ul>${achievements}</ul>
+            </div>
+        `;
+        
+        timeline.appendChild(timelineItem);
+    });
+}
+
+// Initialize language system
+async function initLanguageSystem() {
+    // Load both language files
+    translations.en = await loadTranslations('en');
+    translations.de = await loadTranslations('de');
+    
+    // Get saved language or default to English
+    currentLanguage = localStorage.getItem('language') || 'en';
+    
+    // Update content
+    updateContent(currentLanguage);
+    
+    // Update active language button
+    updateLanguageButtons();
+    
+    // Add event listeners to language buttons
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const lang = btn.getAttribute('data-lang');
+            switchLanguage(lang);
+        });
+    });
+}
+
+// Switch language
+function switchLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    updateContent(lang);
+    updateLanguageButtons();
+}
+
+// Update language button states
+function updateLanguageButtons() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    langButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLanguage);
+    });
+}
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language system first
+    initLanguageSystem();
+
     // Theme toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
     const currentTheme = localStorage.getItem('theme') || 'light';
