@@ -7,16 +7,16 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Software-Entwickler",
-    "subtitle": "Innovative Lösungen mit modernen Technologien entwickeln",
-    "description": "Leidenschaftlicher Entwickler mit Expertise in der Full-Stack-Entwicklung, der effiziente und skalierbare Anwendungen erstellt.",
+    "title": "Embedded Systems & KI-Entwickler",
+    "subtitle": "Innovative Lösungen mit Embedded Systems, Computer Vision und KI",
+    "description": "Leidenschaftlicher Entwickler mit Expertise in den Bereichen Embedded Systems, Computer Vision und maschinelles Lernen für intelligente Hardware-Software-Integration.",
     "getInTouch": "Kontakt aufnehmen",
     "viewProjects": "Projekte ansehen"
   },
   "about": {
     "title": "Über mich",
-    "description1": "Ich bin ein leidenschaftlicher Software-Entwickler mit fundiertem Hintergrund in der Erstellung robuster und skalierbarer Anwendungen. Ich löse gerne komplexe Probleme und lerne neue Technologien, um innovative Lösungen zu liefern.",
-    "description2": "Mit Erfahrung sowohl in der Frontend- als auch Backend-Entwicklung strebe ich danach, nahtlose Benutzererfahrungen zu schaffen und dabei sauberen, effizienten Code zu schreiben.",
+    "description1": "Ich bin ein spezialisierter Entwickler für Embedded Systems und künstliche Intelligenz mit fundiertem Hintergrund in der Entwicklung intelligenter Hardware-Software-Lösungen. Ich löse gerne komplexe Probleme in den Bereichen Computer Vision, maschinelles Lernen und Embedded-Programmierung.",
+    "description2": "Mit Erfahrung in der Integration von KI-Algorithmen in Embedded-Systeme strebe ich danach, innovative IoT-Lösungen und intelligente Geräte zu entwickeln, die reale Probleme lösen.",
     "stats": {
       "experience": "Jahre Erfahrung",
       "projects": "Abgeschlossene Projekte",
@@ -27,25 +27,25 @@
     "title": "Berufserfahrung",
     "jobs": [
       {
-        "position": "Senior Software-Entwickler",
+        "position": "Embedded Systems & KI-Entwickler",
         "company": "Tech-Unternehmen",
         "period": "2022 - Heute",
-        "description": "Leitete die Entwicklung skalierbarer Webanwendungen mit modernen Frameworks. Arbeitete mit funktionsübergreifenden Teams zusammen, um hochwertige Software-Lösungen zu liefern.",
+        "description": "Entwicklung von Embedded-Systeme mit Computer Vision und maschinellem Lernen. Implementierung von KI-Algorithmen auf ressourcenbeschränkten Geräten für IoT-Anwendungen.",
         "achievements": [
-          "Entwicklung und Wartung React-basierter Webanwendungen",
-          "Implementierung von RESTful APIs mit Node.js und Express",
-          "Optimierung der Anwendungsleistung und Datenbankabfragen"
+          "Entwicklung von Computer Vision-Algorithmen für Embedded-Systeme",
+          "Implementierung von Machine Learning-Modellen auf Mikrocontrollern",
+          "Optimierung von KI-Algorithmen für ressourcenbeschränkte Hardware"
         ]
       },
       {
-        "position": "Software-Entwickler",
+        "position": "Embedded Software-Entwickler",
         "company": "Vorheriges Unternehmen",
         "period": "2020 - 2022",
-        "description": "Entwickelte Full-Stack-Anwendungen und trug zu verschiedenen Projekten mit modernen Web-Technologien und Best Practices bei.",
+        "description": "Entwicklung von Firmware und Embedded-Software für intelligente Geräte. Arbeit mit verschiedenen Mikrocontroller-Plattformen und Sensor-Integrationen.",
         "achievements": [
-          "Erstellung responsiver Web-Interfaces mit HTML, CSS und JavaScript",
-          "Arbeit mit Datenbanken und API-Integrationen",
-          "Teilnahme an Code-Reviews und agilen Entwicklungsprozessen"
+          "Firmware-Entwicklung für ARM-basierte Mikrocontroller",
+          "Integration von Sensoren und Aktuatoren in Embedded-Systeme",
+          "Entwicklung von Echtzeitanwendungen und Hardware-naher Programmierung"
         ]
       }
     ]
@@ -54,28 +54,28 @@
     "title": "Ausgewählte Projekte",
     "items": [
       {
-        "name": "Leap Motion Dokumentation",
-        "description": "Umfassende Dokumentation für Leap Motion Entwicklung mit detaillierten API-Referenzen und Beispielen.",
+        "name": "Leap Motion Computer Vision",
+        "description": "Umfassende Computer Vision-Lösung für Leap Motion mit Hand-Tracking und Gestenerkennung. Dokumentation und API-Referenzen für Embedded-Integration.",
         "link": "Dokumentation anzeigen"
       },
       {
-        "name": "Webanwendung",
-        "description": "Moderne responsive Webanwendung, entwickelt mit neuesten Technologien und Best Practices.",
+        "name": "KI-basierte Embedded-Anwendung",
+        "description": "Intelligentes Embedded-System mit Machine Learning für Echtzeitbildverarbeitung und Objekterkennung auf Mikrocontroller-Plattformen.",
         "link": "Live Demo"
       },
       {
-        "name": "API-Entwicklung",
-        "description": "RESTful API-Service mit Authentifizierung, Datenvalidierung und umfassender Dokumentation."
+        "name": "Computer Vision API",
+        "description": "RESTful API für Computer Vision-Services mit Bilderkennung, Objektdetektion und maschinellem Lernen für IoT-Geräte."
       }
     ]
   },
   "skills": {
     "title": "Fähigkeiten & Technologien",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "libraries": "Bibliotheken",
-      "tools": "Tools & Sonstiges"
+      "frontend": "Embedded Systems",
+      "backend": "Computer Vision & KI",
+      "libraries": "Hardware & Protokolle",
+      "tools": "Tools & Frameworks"
     }
   },
   "contact": {

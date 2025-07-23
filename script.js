@@ -462,3 +462,34 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Email protection function
+function sendEmail() {
+    // Construct email address dynamically to avoid scraping
+    const user = 'samuel.koob';
+    const domain = 'icloud.com';
+    const email = user + '@' + domain;
+    
+    // Open email client
+    window.location.href = 'mailto:' + email;
+}
+
+// LinkedIn protection function
+function openLinkedIn() {
+    // Construct LinkedIn URL dynamically to avoid scraping
+    const baseUrl = 'https://www.linkedin.com/in/';
+    const username = 'samuel-maximilian-koob';
+    const suffix = 'b0560b376';
+    const linkedinUrl = baseUrl + username + '-' + suffix + '/';
+    
+    // Open LinkedIn profile in new tab
+    window.open(linkedinUrl, '_blank');
+}
+
+// Additional protection: ROT13 encoding for email display
+function decodeEmail() {
+    const encoded = 'fnzhry.xbbo@vpybhq.pbz'; // ROT13 encoded email
+    return encoded.replace(/[a-zA-Z]/g, function(c) {
+        return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+    });
+}

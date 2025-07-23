@@ -79,7 +79,7 @@
                     </p>
                     <div class="stats">
                         <div class="stat">
-                            <h3>3+</h3>
+                            <h3>2+</h3>
                             <p data-translate="about.stats.experience">Years Experience</p>
                         </div>
                         <div class="stat">
@@ -120,9 +120,9 @@
                         <h3 data-translate="projects.items.0.name">Leap Motion Documentation</h3>
                         <p data-translate="projects.items.0.description">Comprehensive documentation for Leap Motion development, featuring detailed API references and examples.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">Doxygen</span>
-                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">C++ / C#</span>
+                            <span class="tech-tag">MSVC Toolchain</span>
+                            <span class="tech-tag">...</span>
                         </div>
                         <div class="project-links">
                             <a href="leapdocu/DoxyDocumentation/html/index.html" class="project-link">
@@ -234,17 +234,36 @@
                     <p data-translate="contact.description">I'm always interested in new opportunities and collaborations. 
                        Feel free to reach out if you'd like to work together!</p>
                     <div class="contact-methods">
+                        <!-- Honeypot for scrapers - invisible fake email -->
+                        <div class="scraper-honeypot" style="position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden;">
+                            <span>noreply@spam-trap.com</span>
+                            <a href="mailto:fake.email@scraper-bait.net">fake.email@scraper-bait.net</a>
+                            <div>Contact: admin@honeypot-trap.org</div>
+                            <a href="https://www.linkedin.com/in/fake-profile-123456789/" target="_blank">linkedin.com/in/fake-profile</a>
+                            <span>www.linkedin.com/in/honeypot-trap-account</span>
+                            <div>LinkedIn: https://linkedin.com/in/spam-bait-profile</div>
+                        </div>
+                        
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
-                            <span>samuel.koob@example.com</span>
+                            <a href="#" onclick="sendEmail(); return false;" class="email-link">
+                                <span class="email-part">samuel.koob</span>
+                                <span class="email-at">[📨]</span>
+                                <span class="email-part">icloud.com</span>
+                            </a>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-linkedin"></i>
-                            <span>www.linkedin.com/in/samuel-maximilian-koob-b0560b376</span>
+                            <a href="#" onclick="openLinkedIn(); return false;" class="linkedin-link">
+                                <span class="linkedin-part">www.linkedin.com/in/</span>
+                                <span class="linkedin-part">samuel-maximilian-koob</span>
+                                <span class="linkedin-separator">-</span>
+                                <span class="linkedin-part">b0560b376</span>
+                            </a>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
-                            <span>github.com/samuel-koob</span>
+                            <a href="https://github.com/samuel-koob" target="_blank">github.com/samuel-koob</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +291,7 @@
                 <div class="social-links">
                     <a href="https://www.github.com/samuel-koob"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/samuel-maximilian-koob-b0560b376/"><i class="fab fa-linkedin"></i></a>
-                    <!---- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://sa-ko.itch.io/"><i class="fab fa-itch-io"></i></a>
                 </div>
             </div>
         </div>

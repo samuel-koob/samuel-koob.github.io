@@ -7,16 +7,16 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Software Developer",
-    "subtitle": "Building innovative solutions with modern technologies",
-    "description": "Passionate developer with expertise in full-stack development, creating efficient and scalable applications.",
+    "title": "Embedded Systems & AI Developer",
+    "subtitle": "Building intelligent solutions with Embedded Systems, Computer Vision and AI",
+    "description": "Passionate developer with expertise in Embedded Systems, Computer Vision and Machine Learning.",
     "getInTouch": "Get In Touch",
     "viewProjects": "View Projects"
   },
   "about": {
     "title": "About Me",
-    "description1": "I'm a passionate software developer with a strong background in creating robust and scalable applications. I enjoy solving complex problems and learning new technologies to deliver innovative solutions.",
-    "description2": "With experience in both front-end and back-end development, I strive to create seamless user experiences while maintaining clean, efficient code.",
+    "description1": "I'm a developer interested in Embedded Systems, Artificial Intelligence and Computer Vision.",
+    "description2": "Integrating Computer Vision and Embedded Systems, I aim to create intelligent solutions for real-world problems.",
     "stats": {
       "experience": "Years Experience",
       "projects": "Projects Completed",
@@ -27,25 +27,25 @@
     "title": "Experience",
     "jobs": [
       {
-        "position": "Senior Software Developer",
-        "company": "Tech Company",
-        "period": "2022 - Present",
-        "description": "Led development of scalable web applications using modern frameworks. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+        "position": "Software Developer (Embedded Systems & Computer Vision)",
+        "company": "Innomatik AG",
+        "period": "2023 - 2025",
+        "description": "Developed an All-Sky-Camera system for meteorological observations",
         "achievements": [
-          "Developed and maintained React-based web applications",
-          "Implemented RESTful APIs using Node.js and Express",
-          "Optimized application performance and database queries"
+          "Designed Raspberry Pi-based All-Sky-Camera hardware",
+          "Implemented resilient software for image capture, processing and remote access desktop application",
+          "Performed data analysis, visualization and forecasting of captured meteorological data based on Computer Vision algorithms"
         ]
       },
       {
-        "position": "Software Developer",
+        "position": "Embedded Software Developer",
         "company": "Previous Company",
         "period": "2020 - 2022",
-        "description": "Developed full-stack applications and contributed to various projects using modern web technologies and best practices.",
+        "description": "Developed firmware and embedded software for intelligent devices. Worked with various microcontroller platforms and sensor integrations.",
         "achievements": [
-          "Built responsive web interfaces with HTML, CSS, and JavaScript",
-          "Worked with databases and API integrations",
-          "Participated in code reviews and agile development processes"
+          "Firmware development for ARM-based microcontrollers",
+          "Integration of sensors and actuators in embedded systems",
+          "Development of real-time applications and low-level programming"
         ]
       }
     ]
@@ -54,28 +54,29 @@
     "title": "Featured Projects",
     "items": [
       {
-        "name": "Leap Motion Documentation",
-        "description": "Comprehensive documentation for Leap Motion development, featuring detailed API references and examples.",
+        "name": "Custom-built Hand Tracking Library",
+        "description": "A library for hand tracking using an Ultraleap device, providing an interface between the device and a .NET application. Written in C++, leveraging C#/C++ interop for seamless integration.",
         "link": "View Docs"
       },
-      {
-        "name": "Web Application",
-        "description": "Modern responsive web application built with latest technologies and best practices.",
-        "link": "Live Demo"
+    {
+        "name": "CNN-based Cloud Movement Forecasting",
+        "description": "Comprehensive AI-based Computer Vision solution for cloud movement forecasting using CNNs.",
+        "link": "View Repository"
       },
       {
-        "name": "API Development",
-        "description": "RESTful API service with authentication, data validation, and comprehensive documentation."
+        "name": "Music Player Daemon Controller",
+        "description": "ESP32C3-based controller for Music Player Daemon using Lightweight Versatile Graphics Library, enabling remote music playback control.",
+        "link": "View Repository"
       }
     ]
   },
   "skills": {
     "title": "Skills & Technologies",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "libraries": "Libraries",
-      "tools": "Tools & Others"
+      "frontend": "Embedded Systems",
+      "backend": "Computer Vision & AI",
+      "libraries": "Hardware & Protocols",
+      "tools": "Tools & Frameworks"
     }
   },
   "contact": {

@@ -19,7 +19,7 @@
     --border-color: #e2e8f0;
     --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    --gradient: linear-gradient(45deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
     --hero-bg: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -37,7 +37,7 @@
     --border-color: #475569;
     --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-    --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    --gradient: linear-gradient(45deg, #4f46e5 0%, #7c3aed 50%, #a855f7 100%);
     --hero-bg: linear-gradient(135deg, #1e293b 0%, #334155 100%);
 }
 
@@ -623,6 +623,73 @@ html {
     font-size: 1.2rem;
     color: var(--primary-color);
     width: 20px;
+}
+
+/* Email protection styling */
+.email-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: var(--primary-color);
+}
+
+.email-part,
+.email-at {
+    display: inline;
+}
+
+/* LinkedIn protection styling */
+.linkedin-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: var(--primary-color);
+}
+
+.linkedin-part,
+.linkedin-separator {
+    display: inline;
+}
+
+.contact-method a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-method a:hover {
+    color: var(--primary-color);
+}
+
+/* Scraper honeypot - invisible to users but visible to scrapers */
+.scraper-honeypot {
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    visibility: hidden !important;
+    display: none !important;
+    pointer-events: none !important;
+}
+
+/* Additional honeypot styles to make it look normal in source code */
+.scraper-honeypot span,
+.scraper-honeypot a,
+.scraper-honeypot div {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    color: transparent !important;
 }
 
 .contact-form {
