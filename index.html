@@ -1,18 +1,310 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
-  <meta http-equiv="refresh" content="5; url = https://samuel-koob.github.io/leapdocu/DoxyDocumentation/html/index.html" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Koob - Developer Portfolio</title>
+    <meta name="description" content="Samuel Koob - Software Developer Portfolio and CV">
+    <meta name="author" content="Samuel Koob">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <!-- your content here... -->
-    <p>If you are not redirected in five seconds, <a href="https://samuel-koob.github.io/leapdocu/DoxyDocumentation/html/index.html">click here</a>.</p>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Samuel Koob</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Software Developer</h1>
+            <h2 class="hero-subtitle">Building innovative solutions with modern technologies</h2>
+            <p class="hero-description">
+                Passionate developer with expertise in full-stack development, 
+                creating efficient and scalable applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate software developer with a strong background in creating 
+                        robust and scalable applications. I enjoy solving complex problems and 
+                        learning new technologies to deliver innovative solutions.
+                    </p>
+                    <p>
+                        With experience in both front-end and back-end development, I strive to 
+                        create seamless user experiences while maintaining clean, efficient code.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Software Developer</h3>
+                        <h4>Tech Company</h4>
+                        <span class="timeline-date">2022 - Present</span>
+                        <p>Led development of scalable web applications using modern frameworks. 
+                           Collaborated with cross-functional teams to deliver high-quality software solutions.</p>
+                        <ul>
+                            <li>Developed and maintained React-based web applications</li>
+                            <li>Implemented RESTful APIs using Node.js and Express</li>
+                            <li>Optimized application performance and database queries</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4>Previous Company</h4>
+                        <span class="timeline-date">2020 - 2022</span>
+                        <p>Developed full-stack applications and contributed to various projects 
+                           using modern web technologies and best practices.</p>
+                        <ul>
+                            <li>Built responsive web interfaces with HTML, CSS, and JavaScript</li>
+                            <li>Worked with databases and API integrations</li>
+                            <li>Participated in code reviews and agile development processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Leap Motion Documentation</h3>
+                        <p>Comprehensive documentation for Leap Motion development, featuring detailed API references and examples.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Doxygen</span>
+                            <span class="tech-tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="leapdocu/DoxyDocumentation/html/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> View Docs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Application</h3>
+                        <p>Modern responsive web application built with latest technologies and best practices.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>API Development</h3>
+                        <p>RESTful API service with authentication, data validation, and comprehensive documentation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Vue.js</span>
+                        <span class="skill-item">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Doxygen</span>
+                        <span class="skill-item">Agile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. 
+                       Feel free to reach out if you'd like to work together!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>samuel.koob@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/samuel-koob</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/samuel-koob</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Samuel Koob. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
