@@ -11,6 +11,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- No JavaScript Warning -->
+    <noscript>
+        <div id="noscript-warning" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Inter', Arial, sans-serif;
+        ">
+            <div style="
+                background: linear-gradient(45deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+                padding: 2rem;
+                border-radius: 12px;
+                max-width: 500px;
+                margin: 1rem;
+                text-align: center;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            ">
+                <h2 style="margin: 0 0 1rem 0; font-size: 1.5rem;">⚠️ JavaScript Required</h2>
+                <p style="margin: 0 0 1rem 0; line-height: 1.6;">
+                    This portfolio website dynamically loads translation content and interactive features using JavaScript.
+                </p>
+                <p style="margin: 0; line-height: 1.6; font-size: 0.9rem; opacity: 0.9;">
+                    Please enable JavaScript in your browser to view the full experience with English/German language support and interactive elements.
+                </p>
+            </div>
+        </div>
+    </noscript>
+
     <!-- Header/Navigation -->
     <header class="header">
         <nav class="nav">
@@ -117,8 +153,8 @@
                         <i class="fas fa-code"></i>
                     </div>
                     <div class="project-content">
-                        <h3 data-translate="projects.items.0.name">Leap Motion Documentation</h3>
-                        <p data-translate="projects.items.0.description">Comprehensive documentation for Leap Motion development, featuring detailed API references and examples.</p>
+                        <h3 data-translate="projects.items.0.name">Loading...</h3>
+                        <p data-translate="projects.items.0.description">Loading...</p>
                         <div class="project-tech">
                             <span class="tech-tag">C++ / C#</span>
                             <span class="tech-tag">MSVC Toolchain</span>
@@ -136,8 +172,8 @@
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3 data-translate="projects.items.1.name">Web Application</h3>
-                        <p data-translate="projects.items.1.description">Modern responsive web application built with latest technologies and best practices.</p>
+                        <h3 data-translate="projects.items.1.name">Loading...</h3>
+                        <p data-translate="projects.items.1.description">Loading....</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
@@ -147,7 +183,7 @@
                             <a href="#" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
-                            <a href="#" class="project-link">
+                            <a href="https://github.com/sam-k0/cloud-forecasting-cnn" class="project-link">
                                 <i class="fas fa-external-link-alt"></i> <span data-translate="projects.items.1.link">Live Demo</span>
                             </a>
                         </div>
@@ -158,15 +194,15 @@
                         <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
-                        <h3 data-translate="projects.items.2.name">API Development</h3>
-                        <p data-translate="projects.items.2.description">RESTful API service with authentication, data validation, and comprehensive documentation.</p>
+                        <h3 data-translate="projects.items.2.name">Loading...</h3>
+                        <p data-translate="projects.items.2.description">Loading...</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">FastAPI</span>
                             <span class="tech-tag">PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
+                            <a href="https://github.com/sam-k0/ESP32C3-MPD-GUI" class="project-link">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
                         </div>
@@ -182,42 +218,43 @@
             <h2 class="section-title" data-translate="skills.title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3 data-translate="skills.categories.frontend">Frontend</h3>
+                    <h3 data-translate="skills.categories.category1">Embedded Systems</h3>
                     <div class="skills-list">
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">QT/PyQT</span>
+                        <span class="skill-item">espressif-idf</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">ESP32</span>
+                        <span class="skill-item">Raspberry Pi</span>
+                        <span class="skill-item">LVGL</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-translate="skills.categories.backend">Backend</h3>
+                    <h3 data-translate="skills.categories.category2">Computer Vision & AI</h3>
                     <div class="skills-list">
                         <span class="skill-item">Python</span>
                         <span class="skill-item">C++</span>
-                        <span class="skill-item">Express.js</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">REST APIs</span>
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">Keras</span>
+                        <span class="skill-item">Lightning.ai (Formerly PyTorch Lightning)</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-translate="skills.categories.libraries">Libraries</h3>
+                    <h3 data-translate="skills.categories.category3">Desktop Development</h3>
                     <div class="skills-list">
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">Redis</span>
+                        <span class="skill-item">C#/.NET & MSVC/C++</span>
+                        <span class="skill-item">UnityEngine & Godot</span>
+                        <span class="skill-item">QT</span>
+                        <span class="skill-item">MSBuild, CMake & Meson+ninja</span>
+                        <span class="skill-item">Linux & Windows System Programming</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 data-translate="skills.categories.tools">Tools & Others</h3>
+                    <h3 data-translate="skills.categories.category4">Tools</h3>
                     <div class="skills-list">
                         <span class="skill-item">Git</span>
                         <span class="skill-item">Docker</span>
-                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Visual Studio Code</span>
                         <span class="skill-item">Linux</span>
                         <span class="skill-item">Doxygen</span>
-                        <span class="skill-item">Agile</span>
                     </div>
                 </div>
             </div>

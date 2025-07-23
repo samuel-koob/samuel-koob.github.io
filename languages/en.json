@@ -15,7 +15,7 @@
   },
   "about": {
     "title": "About Me",
-    "description1": "I'm a developer interested in Embedded Systems, Artificial Intelligence and Computer Vision.",
+    "description1": "I'm a developer interested, but not only limited to Embedded Systems, Artificial Intelligence and Computer Vision. Also Desktop development and Software Engineering are among my interests.",
     "description2": "Integrating Computer Vision and Embedded Systems, I aim to create intelligent solutions for real-world problems.",
     "stats": {
       "experience": "Years Experience",
@@ -35,17 +35,6 @@
           "Designed Raspberry Pi-based All-Sky-Camera hardware",
           "Implemented resilient software for image capture, processing and remote access desktop application",
           "Performed data analysis, visualization and forecasting of captured meteorological data based on Computer Vision algorithms"
-        ]
-      },
-      {
-        "position": "Embedded Software Developer",
-        "company": "Previous Company",
-        "period": "2020 - 2022",
-        "description": "Developed firmware and embedded software for intelligent devices. Worked with various microcontroller platforms and sensor integrations.",
-        "achievements": [
-          "Firmware development for ARM-based microcontrollers",
-          "Integration of sensors and actuators in embedded systems",
-          "Development of real-time applications and low-level programming"
         ]
       }
     ]
@@ -73,10 +62,10 @@
   "skills": {
     "title": "Skills & Technologies",
     "categories": {
-      "frontend": "Embedded Systems",
-      "backend": "Computer Vision & AI",
-      "libraries": "Hardware & Protocols",
-      "tools": "Tools & Frameworks"
+      "category1": "Embedded Systems",
+      "category2": "Computer Vision & AI",
+      "category3": "Desktop Development",
+      "category4": "Tools"
     }
   },
   "contact": {

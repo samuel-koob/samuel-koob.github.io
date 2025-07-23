@@ -8,15 +8,15 @@
   },
   "hero": {
     "title": "Embedded Systems & KI-Entwickler",
-    "subtitle": "Innovative Lösungen mit Embedded Systems, Computer Vision und KI",
-    "description": "Leidenschaftlicher Entwickler mit Expertise in den Bereichen Embedded Systems, Computer Vision und maschinelles Lernen für intelligente Hardware-Software-Integration.",
+    "subtitle": "Intelligente Lösungen mit Embedded Systems, Computer Vision und KI entwickeln",
+    "description": "Leidenschaftlicher Entwickler mit Interesse an Embedded Systems, Computer Vision und maschinellem Lernen.",
     "getInTouch": "Kontakt aufnehmen",
     "viewProjects": "Projekte ansehen"
   },
   "about": {
     "title": "Über mich",
-    "description1": "Ich bin ein spezialisierter Entwickler für Embedded Systems und künstliche Intelligenz mit fundiertem Hintergrund in der Entwicklung intelligenter Hardware-Software-Lösungen. Ich löse gerne komplexe Probleme in den Bereichen Computer Vision, maschinelles Lernen und Embedded-Programmierung.",
-    "description2": "Mit Erfahrung in der Integration von KI-Algorithmen in Embedded-Systeme strebe ich danach, innovative IoT-Lösungen und intelligente Geräte zu entwickeln, die reale Probleme lösen.",
+    "description1": "Ich bin ein Entwickler mit Interesse an Embedded Systems, künstlicher Intelligenz und Computer Vision. Auch Desktop-Entwicklung und Software-Engineering gehören zu meinen Interessen.",
+    "description2": "Durch die Integration von Computer Vision und Embedded Systems möchte ich intelligente Lösungen für reale Probleme schaffen.",
     "stats": {
       "experience": "Jahre Erfahrung",
       "projects": "Abgeschlossene Projekte",
@@ -27,25 +27,14 @@
     "title": "Berufserfahrung",
     "jobs": [
       {
-        "position": "Embedded Systems & KI-Entwickler",
-        "company": "Tech-Unternehmen",
-        "period": "2022 - Heute",
-        "description": "Entwicklung von Embedded-Systeme mit Computer Vision und maschinellem Lernen. Implementierung von KI-Algorithmen auf ressourcenbeschränkten Geräten für IoT-Anwendungen.",
+        "position": "Software-Entwickler (Embedded Systems & Computer Vision)",
+        "company": "Innomatik AG",
+        "period": "2023 - 2025",
+        "description": "Entwicklung eines All-Sky-Camera-Systems für meteorologische Beobachtungen",
         "achievements": [
-          "Entwicklung von Computer Vision-Algorithmen für Embedded-Systeme",
-          "Implementierung von Machine Learning-Modellen auf Mikrocontrollern",
-          "Optimierung von KI-Algorithmen für ressourcenbeschränkte Hardware"
-        ]
-      },
-      {
-        "position": "Embedded Software-Entwickler",
-        "company": "Vorheriges Unternehmen",
-        "period": "2020 - 2022",
-        "description": "Entwicklung von Firmware und Embedded-Software für intelligente Geräte. Arbeit mit verschiedenen Mikrocontroller-Plattformen und Sensor-Integrationen.",
-        "achievements": [
-          "Firmware-Entwicklung für ARM-basierte Mikrocontroller",
-          "Integration von Sensoren und Aktuatoren in Embedded-Systeme",
-          "Entwicklung von Echtzeitanwendungen und Hardware-naher Programmierung"
+          "Entwurf einer Raspberry Pi-basierten All-Sky-Camera Hardware",
+          "Implementierung robuster Software für Bildaufnahme, -verarbeitung und Remote-Access-Desktop-Anwendung",
+          "Durchführung von Datenanalyse, Visualisierung und Vorhersage erfasster meteorologischer Daten basierend auf Computer Vision-Algorithmen"
         ]
       }
     ]
@@ -54,28 +43,29 @@
     "title": "Ausgewählte Projekte",
     "items": [
       {
-        "name": "Leap Motion Computer Vision",
-        "description": "Umfassende Computer Vision-Lösung für Leap Motion mit Hand-Tracking und Gestenerkennung. Dokumentation und API-Referenzen für Embedded-Integration.",
+        "name": "Maßgeschneiderte Hand-Tracking-Bibliothek",
+        "description": "Eine Bibliothek für Hand-Tracking mit einem Ultraleap-Gerät, die eine Schnittstelle zwischen dem Gerät und einer .NET-Anwendung bietet. Geschrieben in C++, nutzt C#/C++ Interop für nahtlose Integration.",
         "link": "Dokumentation anzeigen"
       },
       {
-        "name": "KI-basierte Embedded-Anwendung",
-        "description": "Intelligentes Embedded-System mit Machine Learning für Echtzeitbildverarbeitung und Objekterkennung auf Mikrocontroller-Plattformen.",
-        "link": "Live Demo"
+        "name": "CNN-basierte Wolkenbewegungsvorhersage",
+        "description": "Umfassende KI-basierte Computer Vision-Lösung für Wolkenbewegungsvorhersage mit CNNs.",
+        "link": "Repository anzeigen"
       },
       {
-        "name": "Computer Vision API",
-        "description": "RESTful API für Computer Vision-Services mit Bilderkennung, Objektdetektion und maschinellem Lernen für IoT-Geräte."
+        "name": "Music Player Daemon Controller",
+        "description": "ESP32C3-basierter Controller für Music Player Daemon mit Lightweight Versatile Graphics Library, ermöglicht ferngesteuerte Musikwiedergabe.",
+        "link": "Repository anzeigen"
       }
     ]
   },
   "skills": {
     "title": "Fähigkeiten & Technologien",
     "categories": {
-      "frontend": "Embedded Systems",
-      "backend": "Computer Vision & KI",
-      "libraries": "Hardware & Protokolle",
-      "tools": "Tools & Frameworks"
+      "category1": "Embedded Systems",
+      "category2": "Computer Vision & KI",
+      "category3": "Desktop-Entwicklung",
+      "category4": "Tools"
     }
   },
   "contact": {
