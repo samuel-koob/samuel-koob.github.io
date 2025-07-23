@@ -12,15 +12,21 @@
     <style>
         /* Prevent layout shift during translation loading */
         .content-loading {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            visibility: hidden;
         }
         .content-loaded {
+            visibility: visible;
             opacity: 1;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         /* Ensure minimum heights to prevent jumping */
         [data-translate] {
             min-height: 1.2em;
+            display: block;
         }
         .hero-title {
             min-height: 2.5em;
