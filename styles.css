@@ -636,17 +636,6 @@ html {
     flex-direction: column;
 }
 
-.form-group input,
-.form-group textarea {
-    padding: 0.75rem 1rem;
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    background: var(--bg-primary);
-}
-
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
@@ -660,7 +649,7 @@ html {
 
 /* Footer */
 .footer {
-    background: var(--text-primary);
+    background: #1e293b;
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -687,7 +676,20 @@ html {
 }
 
 .social-links a:hover {
-    color: var(--accent-color);
+    color: #f59e0b;
+}
+
+/* Form input colors for dark mode */
+.form-group input,
+.form-group textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 /* Responsive Design */
