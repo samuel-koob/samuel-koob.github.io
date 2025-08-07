@@ -470,12 +470,24 @@ document.head.appendChild(style);
 // Email protection function
 function sendEmail() {
     // Construct email address dynamically to avoid scraping
-    const user = 'samuel.koob';
+    const user = 'himmeln-umlaute8';
     const domain = 'icloud.com';
     const email = user + '@' + domain;
     
     // Open email client
     window.location.href = 'mailto:' + email;
+}
+
+function showEmailInfo() {
+    // get language from localStorage
+    const lang = localStorage.getItem('language') || 'en';
+
+    if( lang === 'en') {
+        showNotification("To protect my email from scrapers and spam, I use a dynamic email address. I will receive your email just fine.");
+    }
+    else if( lang === 'de') {
+        showNotification("Um mich vor E-mail Scrapern und Spam zu schützen, nutze ich eine dynamische E-mail Adresse. Ich werde Ihre E-mail problemlos erhalten.");
+    }
 }
 
 // LinkedIn protection function
@@ -490,10 +502,3 @@ function openLinkedIn() {
     window.open(linkedinUrl, '_blank');
 }
 
-// Additional protection: ROT13 encoding for email display
-function decodeEmail() {
-    const encoded = 'fnzhry.xbbo@vpybhq.pbz'; // ROT13 encoded email
-    return encoded.replace(/[a-zA-Z]/g, function(c) {
-        return String.fromCharCode((c <= 'Z' ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
-    });
-}
