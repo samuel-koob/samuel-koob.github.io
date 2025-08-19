@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "Embedded Systems & KI-Entwickler",
-    "subtitle": "Intelligente Lösungen mit Embedded Systems, Computer Vision und KI entwickeln",
+    "subtitle": "entwickelt Intelligente Lösungen mit Embedded Systems, Computer Vision und KI",
     "description": "Leidenschaftlicher Entwickler mit Interesse an Embedded Systems, Computer Vision und maschinellem Lernen.",
     "getInTouch": "Kontakt aufnehmen",
     "viewProjects": "Projekte ansehen"
@@ -32,8 +32,8 @@
         "period": "2023 - 2025",
         "description": "Entwicklung eines All-Sky-Camera-Systems für meteorologische Beobachtungen",
         "achievements": [
-          "Entwurf einer Raspberry Pi-basierten All-Sky-Camera Hardware",
-          "Implementierung robuster Software für Bildaufnahme, -verarbeitung und Remote-Access-Desktop-Anwendung",
+          "Entwurf einer Raspberry Pi-basierten All-Sky-Camera",
+          "Implementierung robuster Software für Bildaufnahme, -verarbeitung und dazugehöriger Remote-Access Desktop-Anwendung",
           "Durchführung von Datenanalyse, Visualisierung und Vorhersage erfasster meteorologischer Daten basierend auf Computer Vision-Algorithmen"
         ]
       }
@@ -43,7 +43,7 @@
     "title": "Ausgewählte Projekte",
     "items": [
       {
-        "name": "Maßgeschneiderte Hand-Tracking-Bibliothek",
+        "name": "Hand-Tracking-Bibliothek",
         "description": "Eine Bibliothek für Hand-Tracking mit einem Ultraleap-Gerät, die eine Schnittstelle zwischen dem Gerät und einer .NET-Anwendung bietet. Geschrieben in C++, nutzt C#/C++ Interop für nahtlose Integration.",
         "link": "Dokumentation anzeigen"
       },
