@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Koob - Developer Portfolio</title>
+    <meta name="description" content="Samuel Koob - Software Developer Portfolio and CV">
+    <meta name="author" content="Samuel Koob">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Prevent layout shift during translation loading */
+        .content-loading {
+            visibility: hidden;
+        }
+        .content-loaded {
+            visibility: visible;
+            opacity: 1;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Ensure minimum heights to prevent jumping */
+        [data-translate] {
+            min-height: 1.2em;
+            display: block;
+        }
+        .hero-title {
+            min-height: 2.5em;
+        }
+        .hero-subtitle {
+            min-height: 1.8em;
+        }
+        .hero-description {
+            min-height: 3em;
+        }
+    </style>
+</head>
+<body class="content-loading">
+    <!-- No JavaScript Warning -->
+    <noscript>
+        <div id="noscript-warning" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'Inter', Arial, sans-serif;
+        ">
+            <div style="
+                background: linear-gradient(45deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+                padding: 2rem;
+                border-radius: 12px;
+                max-width: 500px;
+                margin: 1rem;
+                text-align: center;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            ">
+                <h2 style="margin: 0 0 1rem 0; font-size: 1.5rem;">⚠️ JavaScript Required</h2>
+                <p style="margin: 0 0 1rem 0; line-height: 1.6;">
+                    This portfolio website dynamically loads translation content and interactive features using JavaScript.
+                </p>
+                <p style="margin: 0; line-height: 1.6; font-size: 0.9rem; opacity: 0.9;">
+                    Please enable JavaScript in your browser to view the full experience with English/German language support and interactive elements.
+                </p>
+            </div>
+        </div>
+    </noscript>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h2>Samuel Koob</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link" data-translate="nav.about">About</a></li>
+                <li><a href="#experience" class="nav-link" data-translate="nav.experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="nav.projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-translate="nav.skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="de">DE</button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="hero.title">...</h1>
+            <h2 class="hero-subtitle" data-translate="hero.subtitle">Building innovative solutions with modern technologies</h2>
+            <p class="hero-description" data-translate="hero.description">
+                Passionate developer with expertise in full-stack development, 
+                creating efficient and scalable applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" data-translate="hero.getInTouch">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary" data-translate="hero.viewProjects">View Projects</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-placeholder">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about.description1">
+                        I'm a passionate software developer with a strong background in creating 
+                        robust and scalable applications. I enjoy solving complex problems and 
+                        learning new technologies to deliver innovative solutions.
+                    </p>
+                    <p data-translate="about.description2">
+                        With experience in both front-end and back-end development, I strive to 
+                        create seamless user experiences while maintaining clean, efficient code.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p data-translate="about.stats.experience">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p data-translate="about.stats.projects">Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p data-translate="about.stats.technologies">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-translate="experience.title">Experience</h2>
+            <div class="timeline" id="experience-timeline">
+                <!-- Experience items will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="projects.title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.items.0.name">Loading...</h3>
+                        <p data-translate="projects.items.0.description">Loading...</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++ / C#</span>
+                            <span class="tech-tag">MSVC Toolchain</span>
+                            <span class="tech-tag">...</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="leapdocu/DoxyDocumentation/html/index.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> <span data-translate="projects.items.0.link">View Docs</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.items.1.name">Loading...</h3>
+                        <p data-translate="projects.items.1.description">Loading....</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Keras</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sam-k0/cloud-forecasting-cnn" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.items.2.name">Loading...</h3>
+                        <p data-translate="projects.items.2.description">Loading...</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP-IDF</span>
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">LVGL</span>
+                            <span class="tech-tag">FreeRTOS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sam-k0/ESP32C3-MPD-GUI" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-translate="skills.title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-translate="skills.categories.category1">Embedded Systems</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">espressif-idf</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">ESP32</span>
+                        <span class="skill-item">Raspberry Pi</span>
+                        <span class="skill-item">LVGL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skills.categories.category2">Computer Vision & AI</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">Keras</span>
+                        <span class="skill-item">Lightning.ai (Formerly PyTorch Lightning)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skills.categories.category3">Desktop Development</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">C#/.NET & MSVC/C++</span>
+                        <span class="skill-item">UnityEngine & Godot</span>
+                        <span class="skill-item">QT</span>
+                        <span class="skill-item">MSBuild, CMake & Meson+ninja</span>
+                        <span class="skill-item">Linux & Windows System Programming</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skills.categories.category4">Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Visual Studio Code</span>
+                        <span class="skill-item">Linux (daily use)</span>
+                        <span class="skill-item">Doxygen</span>
+                        <span class="skill-item">bash</span>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact.subtitle">Let's Connect</h3>
+                    <p data-translate="contact.description">I'm always interested in new opportunities and collaborations. 
+                       Feel free to reach out if you'd like to work together!</p>
+                    <div class="contact-methods">
+                        <!-- Honeypot for scrapers - invisible fake email -->
+                        <div class="scraper-honeypot" style="position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden;">
+                            <span>noreply@spam-trap.com</span>
+                            <a href="mailto:fake.email@scraper-bait.net">fake.email@scraper-bait.net</a>
+                            <div>Contact: admin@honeypot-trap.org</div>
+                            <a href="https://www.linkedin.com/in/fake-profile-123456789/" target="_blank">linkedin.com/in/fake-profile</a>
+                            <span>www.linkedin.com/in/honeypot-trap-account</span>
+                            <div>LinkedIn: https://linkedin.com/in/spam-bait-profile</div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#" onclick="sendEmail(); return false;" class="email-link">
+                                <span class="email-part">himmeln-umlaute8</span>
+                                <span class="email-at">[📨]</span>
+                                <span class="email-part">icloud.com</span>
+                            </a>
+                            <a onclick="showEmailInfo(); return false;">[Info]</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="#" onclick="openLinkedIn(); return false;" class="linkedin-link">
+                                <span class="linkedin-part">www.linkedin.com/in/</span>
+                                <span class="linkedin-part">samuel-maximilian-koob</span>
+                                <span class="linkedin-separator">-</span>
+                                <span class="linkedin-part">b0560b376</span>
+                            </a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/samuel-koob" target="_blank">github.com/samuel-koob</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" data-translate-placeholder="contact.form.name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" data-translate-placeholder="contact.form.email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea data-translate-placeholder="contact.form.message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="contact.form.send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Imprint Section -->
+    <section id="imprint" class="section section-alt">
+        <div class="container">
+            <h2>Impressum</h2>
+            <p>
+                Samuel Koob<br>
+                Germany
+            </p>
+            <p>
+                Email: sam@sam-ko.eu
+            </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-translate="footer.copyright">&copy; 2025 Samuel Koob. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.github.com/samuel-koob"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/samuel-maximilian-koob-b0560b376/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://sa-ko.itch.io/"><i class="fab fa-itch-io"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
